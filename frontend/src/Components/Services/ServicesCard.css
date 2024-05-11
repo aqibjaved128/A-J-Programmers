@@ -1,0 +1,60 @@
+.serviceCardContainer {
+    border: 1px solid rgba(0, 0, 0, 0.489);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: none;
+    width: 400px;
+    transition: all 0.5s !important;
+    min-height: 75vh;
+
+}
+
+.serviceCardContainer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:1vmax 3vmax;
+    text-align: left;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+.serviceCardContainer > div:first-child > img {
+    width: 110px;
+}
+
+.serviceCardContainer > div:last-child > h3 {
+    font: 700 21px "Roboto";
+    padding: 0.5vmax 0.2vmax;
+    color: rgba(0, 0, 0, 0.735);
+    transition: all 0.5s;
+}
+.serviceCardContainer > div:last-child > p {
+    font: 300 17px "Roboto";
+    padding: 0.5vmax 0.2vmax;
+    color: rgba(0, 0, 0, 0.735);
+    transition: all 0.5s;
+    letter-spacing: 0.1vmax;
+    word-spacing: 0.2vmax;
+    letter-spacing: 2px;
+    line-height: 31px;
+}
+.serviceCardContainer:hover {
+    box-shadow: 0  0 7px rgba(0, 128, 0, 0.655);
+}
+
+@media screen and (max-width: 738px) {
+    .serviceCardContainer {
+        margin: 2vmax auto;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .serviceCardContainer {
+        width: 40vmax;
+    }
+}

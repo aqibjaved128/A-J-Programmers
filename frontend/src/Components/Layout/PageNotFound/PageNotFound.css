@@ -1,0 +1,87 @@
+.errorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vmin;
+    width: 100vw;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.errorBox {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 3vmax;
+    text-align: center;
+}
+
+.errorBox > h1:first-child {
+    font: 500 54px "Roboto";
+    color: rgba(0, 0, 0, 0.81);
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.562);
+}
+.errorBox > h1 {
+    font: 300 40px cursive;
+    color: rgba(0, 0, 0, 0.81);
+    letter-spacing: 0.2vmax;
+}
+.errorBox > p{
+    font: 100 19px "Roboto";
+    padding: 1vmax;
+    color: rgba(0, 0, 0, 0.81);
+}
+
+.errorBox > img {
+    width: 450px;
+}
+
+.errorBox > a {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.63);
+    padding: 12px 40px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font: 600 14px cursive;
+    transition: all 0.5s ;
+}
+
+.errorBox > a:hover {
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+}
+
+@media screen and (max-width:730px) {
+    .errorBox {
+        padding-top: 20vmax;
+        padding-bottom: 10vmax;
+    }
+  
+}
+
+@media screen and (max-width:500px) {
+    .errorBox > img {
+        width: 50vmax;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .errorBox > img {
+        width: 40vmax;
+    }
+    .errorBox > h1 {
+        font-size: 30px ;
+    }
+    .errorBox > h1:first-child {
+        font-size: 50px ;
+    }
+    .errorBox > p {
+        padding: 4vmax;
+    }
+}

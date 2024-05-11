@@ -1,0 +1,493 @@
+.home {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 100vmin;
+}
+
+.mianBhaijan {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.homeCanvas{
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  box-sizing: border-box;
+  filter: blur(4px);
+  position: absolute;
+}
+
+.homeCanvasContainer{
+background-color: rgba(0, 0, 0, 0.048);
+width: 100%;
+z-index: 2;
+position: relative;
+height: 100vh;
+color: white;
+display: flex;
+}
+
+.homeCanvasContainer > h1 {
+position: absolute;
+top: 60%;
+left: 0%;
+padding: 2vmax;
+display: flex;
+flex-direction: column;
+text-align: center;
+font: 500 25px  sans-serif;
+filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+transform: translate(0%, -50%);  
+}
+.homeCanvasContainer > h1 > a > svg{
+transition: all 0.5s;
+color: rgba(255, 255, 255, 0.879);
+padding: 1vmax 0vmax;
+cursor: pointer;
+transition: all 0.5s;
+}
+.homeCanvasContainer > h1 > a > svg:hover {
+transform: translateY(-10px) scale(1.1);
+color: green;
+
+}
+.homeCanvasBox{
+position: absolute;
+top: 50%;
+right: 0%;
+text-align: right;
+transform: translate(0%, -50%);
+
+}
+.homeCanvasBox > h2 {
+font: 900 3rem "Ubuntu Mono", "Roboto";
+letter-spacing: 21px;
+line-height: 125px;
+cursor: default;
+color: white;
+}
+
+.homeCanvasContainer > a {
+background-color: white;
+transition: all 0.5s;
+color: rgb(0, 0, 0);
+font: 700 1rem "Ubuntu Mono", "Roboto";
+position: absolute;
+text-decoration: none;
+padding: 2vmax 6vmax;
+box-sizing: border-box;
+border: 1px solid white;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.homeCanvasContainer > a:hover {
+color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 0);
+}
+
+.homeScrollBtn {
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+left: 50%;
+border-radius: 100%;
+transform: translateY(-150%);
+padding: 0.5vmax;
+animation: scrollPop 0.5s ease-in infinite alternate;
+
+}
+
+.homeScrollBtn > svg {
+font-size: 3vmax;
+color: rgb(255, 255, 255);
+}
+@keyframes scrollPop {
+  to {
+    transform: translateY(-200%);
+  }
+}
+
+
+.skillsContainer {
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow:hidden;
+  background-color: green;
+}
+
+  .bhaiii {
+  padding: 1.5vmax 0.5vmax;
+
+}
+
+
+.homeAboutContainer {
+  background-color: white;
+  display: flex;
+  box-sizing: border-box;
+  transition: all 0.5s !important;
+  padding: 4vmax;
+}
+.homeAboutContainer > div {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+.homeAboutContainer > div:first-child {
+  width: 55%;
+}
+.homeAboutContainer > div:first-child > p:first-child {
+  font: 600 17px "Roboto";
+  color: green;
+  padding: 10px 0px;
+  border-bottom: 1px solid green;
+}
+.homeAboutContainer > div:first-child > h1 {
+  font: 800 40px 'Franklin Gothic Medium';
+  padding: 0.5vmax 0vmax;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.496);
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.homeAboutContainer > div:first-child > h2 {
+  font: 600 28px "Roboto";
+  color: rgba(0, 0, 0, 0.85);
+  text-transform: capitalize;
+  letter-spacing: 0.1vmax;
+  padding-bottom: 0.2vmax;
+}
+.homeAboutContainer > div:first-child > p {
+  font: 300 18px "Roboto";
+  color: rgba(0, 0, 0, 0.7);
+  padding: 1vmax 0vmax;
+  line-height: 4vh;
+}
+.homeAboutContainer > div:first-child > p > b {
+  font-weight: 800;
+  color: black;
+}
+
+.homeAboutContainer > div:first-child > div {
+  display: flex;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.847);
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 7px green;
+  box-sizing: border-box;
+  padding: 1.5vmax 2vmax ;
+}
+.homeAboutContainer > div:first-child > div > h3 {
+  font: 300 21px "Roboto";
+}
+.homeAboutContainer > div:last-child > img {
+  width: 37vmax;
+}
+
+
+.homeServiceContainer {
+background-color: white;
+display: flex;
+flex-direction: column;
+width: 100vw;
+max-width: 100%;
+box-sizing: border-box;
+overflow: hidden;
+padding: 2vmax;
+}
+
+.homeServiceContainer > div {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.homeServiceContainer > div:first-child {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.homeServiceContainer > div:first-child > p {
+  font: 600 17px "Roboto";
+  color: green;
+  padding: 10px 0px;
+  border-bottom: 1px solid green;
+}
+
+.homeServiceContainer > div:first-child > h1 {
+  font: 800 40px 'Franklin Gothic Medium';
+  padding: 1vmax 0vmax;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.396);
+  color: rgba(0, 0, 0, 0.85);
+
+}
+
+.homeServiceContainer > div:first-child > h3 {
+  font: 600 18px "Roboto";
+  color: rgba(0, 0, 0, 0.85);
+  text-transform: capitalize;
+  letter-spacing: 0.1vmax;
+  padding-bottom: 2vmax;
+}
+.homeServiceContainer > div:last-child {
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 5vmax;
+  
+}
+
+.serviceBhai {
+
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.homePortfolioContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 2vmax;
+}
+
+.homePortfolioContainer > div:first-child {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1vmax;
+}
+
+.homePortfolioContainer > div:first-child > h1 {
+  font: 800 40px 'Franklin Gothic Medium';
+  padding: 1vmax 0vmax;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.396);
+  color: rgba(0, 0, 0, 0.85);
+
+}
+
+.homePortfolioContainer > div:first-child > p {
+  font: 600 18px "Roboto";
+  color: rgba(0, 0, 0, 0.85);
+  text-transform: capitalize;
+  letter-spacing: 0.1vmax;
+  padding-bottom: 2vmax;
+}
+
+.homePortfolioContainer > a {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.63);
+  padding: 12px 40px;
+  background-color: rgba(0, 0, 0, 0.84);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font: 600 14px cursive;
+  transition: all 0.5s !important;
+}
+
+.homePortfolioContainer > a:hover {
+  color: green;
+  border: 2px solid green;
+  background-color: white;
+}
+
+.aboutOurTeamContainer {
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  overflow: hidden;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.testinomialContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1vmax 3vmax;
+  box-sizing: border-box;
+}
+
+.testinomialContainer1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+.testinomialContainer1 > p {
+  font: 600 17px "Roboto";
+  color: green;
+  padding: 10px 0px;
+  border-bottom: 1px solid green;
+
+}
+
+.testinomialContainer1 > h1 {
+  font: 800 40px 'Franklin Gothic Medium';
+  padding: 1vmax 0vmax;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.396);
+  color: rgba(0, 0, 0, 0.75);
+
+}
+.testinomialContainer1 > h3 {
+  font: 600 18px "Roboto";
+  color: rgba(0, 0, 0, 0.85);
+  text-transform: capitalize;
+  letter-spacing: 0.1vmax;
+  padding-bottom: 1vmax;
+}
+
+.testinomialContainer1 > h5 {
+  
+  font: 600 18px "Roboto";
+  color: rgba(0, 0, 255, 0.911);
+  padding: 10px 0px;
+  padding-bottom: 1vmax;
+}
+
+.testinomialContainer2 {
+  box-sizing: border-box;
+  display: flex;
+  background: url('../../images/aboutUs3.jpeg');
+  flex-direction: column;
+}
+.homeContactContainer {
+  padding-top: 4vmax;
+}
+
+@media screen and (max-width: 900px) {
+  .homeCanvas {
+    min-height: 100vmin;
+  }
+  .homeCanvasBox {
+    top: 60%;
+  }
+.homeCanvasBox > h2 {
+  font-size: 25px;
+}
+.homeCanvasContainer > h1 {
+  font-size: 30px;
+  padding: 4vmax;
+}
+.homeCanvasContainer > a {
+top: 60%;
+
+}
+.homeAboutContainer {
+  padding: 2vmax 0vmax;
+}
+.homeAboutContainer > div:first-child {
+  width: 65%;
+}
+.homeAboutContainer > div:first-child > h1 {
+  padding: 1vmax 0vmax;
+}
+.homeAboutContainer > div:first-child > p {
+  padding: 2vmax 0vmax;
+  line-height: 6vh;
+
+}
+.homeAboutContainer > div:first-child > div > h3 {
+  font-size: 19px;
+  padding: 1vmax ;
+}
+.homeAboutContainer > div:last-child > img {
+  width: 45vmax;
+}
+}
+
+@media screen and (max-width: 730px) {
+.homeCanvasContainer > h1 {
+  display: none;
+}
+
+.homeCanvasBox > h2 {
+line-height: 100px;
+letter-spacing: 14px;
+
+}
+.homeAboutContainer {
+  flex-direction: column-reverse;
+}
+.homeAboutContainer > div {
+  padding: 1vmax 4vmax;
+}
+.homeAboutContainer > div:first-child {
+  width: 100%;
+}
+.homeAboutContainer > div:last-child > img {
+  width: 60vmax;
+}
+}
+
+@media screen and (max-width: 450px) {
+  .homeAboutContainer > div:last-child > img {
+    width: 40vmax;
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+  .homeAboutContainer > div:last-child > img {
+    width: 30vmax;
+  }
+}
+
+@media screen and (max-width: 450px) {
+ 
+.homeServiceContainer > div:first-child > h1 {
+  font-size: 35px;
+}
+.homeServiceContainer > div:first-child > h3 {
+  font-size: 15px;
+}
+  .homeServiceContainer {
+    padding: 0vmax;
+  }
+  .homeServiceContainer > div:last-child {
+    padding-left: 0vmax;
+  }
+.homePortfolioContainer {
+  padding: 0vmax;
+}
+.homePortfolioContainer > div:first-child > h1 {
+  font-size: 35px;
+}
+.homePortfolioContainer > div:first-child > p {
+  font-size: 15px;
+}
+.testinomialContainer {
+  padding: 1vmax 0vmax;
+}
+.testinomialContainer1 > h1 {
+  font-size: 30px;
+}
+.testinomialContainer1 > h3 {
+  font-size: 15px;
+}
+}

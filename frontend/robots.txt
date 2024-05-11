@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /about-us
+Allow: /contact-us
+Allow: /partner-with-us
+Allow: /services
+Allow: /our-projects
